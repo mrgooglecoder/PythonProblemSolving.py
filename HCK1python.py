@@ -1,12 +1,25 @@
-# n= int(input('Enter your numbers: '))
-# if n%2!=0:
-#     print('weired')
-# elif 2<=n<=5:
-#     print('not weired')
-# elif 6<=n<20:
-#     print('even weired')
-# else:
-#     print('weired')
-#
-#
-#
+
+# Write a Python program to calculate the factorial of a given number.
+# recursion
+
+def factorial_num(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        return n*factorial_num(n-1)
+
+ # 5  ===120
+ # 5*factorial_num(4)
+ # 4*factorial_num(3)
+ # 3*factorial_num(2)
+ # 2*factorial_num(1)
+ # 2*1=2
+
+
+number=int(input(" enter your number"))
+if number <0:
+    print("The factorial of this number does not exit")
+
+else:
+    result=factorial_num(number)
+    print(f"The factorial of {number} is: ",result)
