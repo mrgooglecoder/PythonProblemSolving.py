@@ -23,3 +23,17 @@ if number <0:
 else:
     result=factorial_num(number)
     print(f"The factorial of {number} is: ",result)
+
+
+
+def is_plandrome(str):
+#     str=str.replace(" ","").lower()
+#     return str==str[::-1]   #step slicing method
+# 
+# 
+# word =input('enter your word / number: ')
+# if is_plandrome(word):
+#     print(f" This {word} is a plandrome ")
+# 
+# else:
+#     print("no its not plandrome")
