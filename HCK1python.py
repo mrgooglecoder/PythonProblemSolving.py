@@ -68,3 +68,21 @@ numbers=[int(x) for x in user_input.split()]
 print(numbers)
 result=sum_func(numbers)
 print(result)
+
+
+# challenge No4
+# Write a Python function to reverse a string.
+
+
+def reversed_fun(str):
+    new_str=""
+    for char in str:
+        new_str=char+new_str
+    return new_str
+  # nole
+
+string='elonmusk'
+# print(string[::-1])  #step slicing
+result=reversed_fun(string)
+print(string)
+print(result)
