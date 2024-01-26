@@ -86,3 +86,37 @@ string='elonmusk'
 result=reversed_fun(string)
 print(string)
 print(result)
+
+
+
+
+#CHALLENGE DAY5
+#Implement a function to find the maximum of list
+
+
+def my_function(lst):
+    if not lst:
+        return None
+
+    max_numb=lst[0]   #34
+    for i in lst:
+        if i > max_numb:
+            max_numb=i
+    return max_numb
+
+
+list=[34,67,89,100,11]
+result=my_function(list)
+if result is not None:
+    print("the max number is: ",result)
+else:
+    print("this is empty list")
+
+
+
+
+
+# max_number=max(list)
+# print(max_number)
+
+
