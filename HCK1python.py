@@ -112,11 +112,21 @@ if result is not None:
 else:
     print("this is empty list")
 
-
-
-
-
 # max_number=max(list)
 # print(max_number)
 
 
+
+# Challenge No 6 and 7
+# copy challenge No 6 from my youtube video if you want due to deletion i forget to uplaod challenge 6 code
+
+def fib_function(n):
+    fib_sequence=[]
+    a,b=0,1;
+    for _ in range(n):
+        fib_sequence.append(a)
+    return fib_sequence
+
+user_input=int(input('enter your n numbers: '))
+result=fib_function(user_input)
+print(result)
