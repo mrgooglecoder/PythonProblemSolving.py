@@ -130,3 +130,28 @@ def fib_function(n):
 user_input=int(input('enter your n numbers: '))
 result=fib_function(user_input)
 print(result)
+
+
+
+
+
+#Challenge 8
+# Write a function to check if two given strings are anagrams.
+# list. ,tisl
+
+def is_anagram(str1, str2):
+    str1_replace=str1.replace(" ","").lower()
+    str2_replace = str2.replace(" ", "").lower()
+
+    return sorted(str1_replace) == sorted(str2_replace)
+
+
+string1=input('enter your string one: ')
+string2=input('enter your string two: ')
+
+result=is_anagram(string1, string2)
+if result:
+    print("This is angram:",result)
+
+else:
+    print('this strings is not anagrams')
