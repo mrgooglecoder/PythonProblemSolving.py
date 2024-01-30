@@ -155,3 +155,26 @@ if result:
 
 else:
     print('this strings is not anagrams')
+
+
+
+
+
+#CHALLENGE NO 9
+# Implement linear search in a list.
+
+def linearsearch(arr , target):
+
+    for i in range(len(arr)):
+        if arr[i]==target:
+            return i;
+    return False
+
+
+list=[ 23,78,12,24,30,67,98]
+target=670
+result= linearsearch(list,target)
+if result:
+    print(f'The index of given number is: {result}')
+else:
+    print('Number not found')
