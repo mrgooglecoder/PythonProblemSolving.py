@@ -178,3 +178,29 @@ if result:
     print(f'The index of given number is: {result}')
 else:
     print('Number not found')
+
+
+
+
+# challeng no#10:
+# Count the number of vowels and consonants in a given string
+
+def check_vow_cons(str):
+    vowel_count=0;
+    cons_count=0;
+    vowels='aeiouAEIOU'
+
+    for char in str:
+        if char.isalpha():
+            if char in vowels:
+                vowel_count+=1
+            else:
+                cons_count+=1
+    return vowel_count, cons_count
+
+string='mr google coder'
+vowel, consonants = check_vow_cons(string)
+
+print('Your string is',string)
+print('Vowels: ',vowel)
+print('consonants:', consonants)
